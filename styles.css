@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 50px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+section p, section ul {
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+.team-member {
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background-color: #555;
+}
+/* تنسيق الشريط */
+.news-ticker {
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    white-space: nowrap; /* لضمان أن النص لا يتم تقسيمه */
+    overflow: hidden; /* إخفاء النصوص التي تتجاوز الحافة */
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.news-content {
+    display: inline-block;
+    animation: scroll-left 15s linear infinite; /* تطبيق الحركة على الشريط */
+}
+
+.news-content span {
+    padding-right: 50px; /* إضافة مسافة بين الأخبار */
+}
+
+/* تعريف حركة النص من اليمين إلى اليسار */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%); /* يبدأ من خارج الصفحة على اليمين */
+    }
+    100% {
+        transform: translateX(-100%); /* ينتهي خارج الصفحة على اليسار */
+    }
+}
+.logo-img {
+    max-width: 100px; /* تحديد أقصى عرض للشعار */
+    height: auto; /* الحفاظ على نسبة العرض والارتفاع */
+}
